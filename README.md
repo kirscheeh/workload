@@ -35,6 +35,67 @@ It will look like this in your terminal:
 Command:
   
     workload overview goal
+    
+## Usage
+Once you have set up the config file and reloaded the Bash after adding the function, you can use the tool accordingly:
+1. Starting a task
 
+        workload start TASK
+  
+2. Stopping a task
+
+        workload end
+  
+3. Showing the overviews:
+
+        workload overview [day|week|month|year|goal]
+  Only the task you spent some time on are shown in the overviews.
+ 
+### Help
+#### General
+    workload --help
+
+        usage: workload [-h] [--version] {start,end,overview} ...
+
+        Simplistic Measurement for Working Time
+
+        positional arguments:
+        {start,end,overview}
+        start               Starting a Time Measurement
+        end                 Ending a Time Measurement
+        overview            Getting an Overview over Spent Time
+
+        optional arguments:
+        -h, --help            show this help message and exit
+        --version, -v         show program's version number and exit
+    
+#### Start
+    workload start --help 
+        usage: workload start [-h] task1, task2, task3, task4}
+
+        positional arguments:
+        {ma,it,cb,others}
+
+        optional arguments:
+        -h, --help         show this help message and exit
+
+#### End
+    workload end --help 
+    
+        usage: workload end [-h]
+
+        positional arguments:
+        end
+
+        optional arguments:
+        -h, --help  show this help message and exit
+  
+#### Overview
+    workload overview --help
+    
+        usage: workload overview [-h] {day,week,month,year,goal}
+
+        positional arguments:
+        {day,week,month,year,goal}
 
 
